@@ -46,8 +46,6 @@
       <div class="flex flex-center q-mb-xl text-h4" style="letter-spacing: 10px;">
         <span v-for="(l, i) in palabraOculta" :key="i">{{ l }}</span>
       </div>
-
-      <!-- Teclado (solo clic) -->
       <div class="row wrap justify-center">
         <q-btn
           v-for="letra in abecedario"
@@ -283,4 +281,5 @@ watch(() => juegoTerminado.value, (v) => {
 
 <style scoped>
 .q-btn { min-width: 45px; min-height: 45px; font-weight: bold; }
+
 </style>
